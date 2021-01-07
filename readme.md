@@ -1,59 +1,10 @@
-# Vue Ping
+# SSC Ping
 
-![Screenshot of Vue Ping](https://github.com/skadimoolam/ping/raw/gh-pages/screenshot.png "Screenshot of Vue Ping")
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fskadimoolam%2Fping.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fskadimoolam%2Fping?ref=badge_shield)
 
 ## Description
 
-A Pretty simple utility built with Vue.js to check if a domain is live or down.
-
-Demo at https://skadimoolam.github.io/ping/
-
-There's no back-end where domains' details and their past status are stored.
-But there's a JSON file name `data.json`, with which you can customize the sites this app is tracking.
-
-
-
-## How does it work
-
-Vue sends a `fetch` request to the specified url, if it returns `status: 200` then it's most likely alright.
-To get around `cros` issue, this just sends an opaque request, for which most server respond without the actual
-content of their site, but the usual headers are present.
-
-
-## Usage
-
-Just clone this repo anywhere the browser can reach and update the `data.json` with your sites.
-
-This also has included support for Google Analytics, just switch the Property Id from Google, or you 
-remove it completely.
-
-
-## data.json Configurations
-
-There's not much you can configure, take a look in the code below. Add or remove any site, should work as expected
-if not just make an issue here in Github.
-``` json
-[
-  {
-    "name": "Google IN",
-    "url": "google.co.in",
-    "port": 80
-  },
-  {
-    "name": "Facebook",
-    "url": "facebook.com"
-  },
-  {
-    "name": "Some Random Site",
-    "url": "somerandomsite.com",
-    "port": 8080
-  }
-]
-```
-
-## Note
-I built this tool for use on a server, if you wish to run it locally you need to have some sort of a server installed. One simple option is `npm install -g serve`. Works great with this tool.
+A Pretty simple utility to check if a domain is live or down.
 
 ## License
 MIT License
