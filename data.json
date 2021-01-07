@@ -15,11 +15,14 @@
   },
   {
     "name": "LinuxFest",
-    "url": "http://linuxfest.aut.ac.ir/"
+    "url": "linuxfest.aut.ac.ir"
   },
   {
-    "name": "Google IN",
-    "url": "google.co.in",
-    "port": 80
+    "name": "CEIT",
+    "url": "ce.aut.ac.ir"
+  },
+  {
+    "name": "AUT",
+    "url": "aut.ac.ir"
   }
 ]
